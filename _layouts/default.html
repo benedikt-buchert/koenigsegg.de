@@ -1,0 +1,54 @@
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+
+	<title>{{ page.title }} | {{ site.title }}</title>
+	<link rel="shortcut icon" href="http://www.koenigsegg.de/fileadmin/templates/favicon.ico" type="image/x-icon; charset=binary">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="author" content="{{ site.author }}">
+
+	<link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+	<div class="container" >
+		<div class= "row">
+			<div class="col-md-3 col-xs-12 pull-right top">
+				<a href="/">
+					<div class="logo">
+						
+						<img class ="img-responsive center-block" src="/images/logo.jpg">
+						
+					</div>
+				</a>
+			</div>
+
+
+			<div class="header col-md-9">
+				{% include menu2.html %}
+			</div>
+			
+		</div>
+		<div class="row slider-row">
+
+			{% include sidebar-menu.html %}
+			
+			{% include slider.html %}
+			
+		</div>
+		<div class="row">
+			
+			{% include main.html %}
+			
+		</div>
+		<div class="row">
+			<div class = "row footer col-md-9 col-sm-12" >
+				{% include footer.html %}
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

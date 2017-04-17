@@ -1,0 +1,58 @@
+{% assign pages = site.pages | sort: 'navigation_weight' %}
+<nav class="navbar">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <div id="navbar" class="collapse navbar-collapse" aria-expanded="false">
+    <ul class="nav navbar-nav">
+    {% for node in pages %}
+      {% assign node_parts = node.url | split: '/' %}
+      {% assign node_depth = node_parts | size %}
+
+      {% if node.navigation_weight %}
+
+      {% assign node_root = '/' | append: node_parts[1] | append: '/' %}
+          {% assign has_children = false %}
+          {% for subnode in pages %}
+            {% if subnode.url contains node_root and subnode.url != node_root %}
+              {% assign has_children = true %}
+            {% endif %}
+          {% endfor %}
+
+        <li class="{% if page.url contains node.url %}active {% endif %}{% if has_children == true %}dropdown{% endif %}">
+          <a {% if node.external_url %} target="_blank" href="{{ node.external_url }}" {% else %} href="{{ node.url }}" {% endif %}>
+              {{ node.title }}
+          </a>
+
+          
+
+          {% if has_children == true %}
+          <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+          </a>
+            <ul class="dropdown-menu">
+              {% for subnode in pages %}
+                {% if subnode.url contains node_root and subnode.url != node_root %}
+                  {% assign node_parts = subnode.url | split: '/' %}
+                  {% assign node_depth = node_parts | size %}
+
+                  {% if node_depth == 3 %}
+                    <li {% if page.url contains subnode.url %} class="active" {% endif %}>
+                      <a  {% if subnode.external_url %} target="_blank" href="{{ subnode.external_url }}"{% else %} href="{{ subnode.url }}"{% endif %}>
+                        {{ subnode.title }}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+</nav>
