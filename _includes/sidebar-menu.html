@@ -8,7 +8,7 @@
 			{% if p.url contains page.url and p.url != site.url or page.url contains p.parentpage %}
 			{% if p.sidebar_weight %}
 				{% if p.external_url %}
-					<li><a target="_blank" href="{{ p.external_url }}">{{p.title}}</a></li>
+					<li><a target="_blank" href="{{ site.baseurl }}{{ p.external_url }}">{{p.title}}</a></li>
 				{% else %}
 					<li><a href="{{ p.url }}" class="{% if page.url contains p.url %}active{% endif %}">{{p.title}}</a></li>
 				{% endif %}
