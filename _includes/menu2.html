@@ -23,7 +23,7 @@
           {% endfor %}
 
         <li class="{% if page.url contains node.url %}active {% endif %}{% if has_children == true %}dropdown{% endif %}">
-          <a {% if node.external_url %} target="_blank" href="{{ node.external_url }}" {% else %} href="{{ node.url }}" {% endif %}>
+          <a {% if node.external_url %} target="_blank" href="{{ node.external_url }}" {% else %} href="{{ site.baseurl }}{{ node.url }}" {% endif %}>
               {{ node.title }}
           </a>
 
@@ -41,7 +41,7 @@
 
                   {% if node_depth == 3 %}
                     <li {% if page.url contains subnode.url %} class="active" {% endif %}>
-                      <a  {% if subnode.external_url %} target="_blank" href="{{ subnode.external_url }}"{% else %} href="{{ subnode.url }}"{% endif %}>
+                      <a  {% if subnode.external_url %} target="_blank" href="{{ subnode.external_url }}"{% else %} href="{{ site.baseurl }}{{ subnode.url }}"{% endif %}>
                         {{ subnode.title }}
                       </a>
                     </li>
