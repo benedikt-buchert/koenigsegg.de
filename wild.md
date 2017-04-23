@@ -2,7 +2,7 @@
 layout: home
 title: Wild
 sidebar_weight: 1
-permalink: /forst/wild
+permalink: forst/wild
 footer: all
 slides:
   - wald.jpg
