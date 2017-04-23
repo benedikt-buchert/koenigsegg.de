@@ -2,7 +2,7 @@
 layout: home
 title: Archiv
 sidebar_weight: 1
-permalink: /familie/archiv
+permalink: familie/archiv
 footer: archiv
 slides:
   - koenigsegg.jpg
