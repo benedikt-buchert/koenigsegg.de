@@ -14,7 +14,7 @@
 				{% if p.external_url %}
 				<a target="_blank" href="{{ p.external_url }}">{{p.title}}</a>
 				{% else %}
-				<a href="{{p.url}}">{% if p.menu-title %} {{ p.menu-title }}{% else %} {{ p.title }} {% endif %}</a>
+				<a href="{{ baseurl }}/{{p.url}}">{% if p.menu-title %} {{ p.menu-title }}{% else %} {{ p.title }} {% endif %}</a>
 				{% endif %}
 			</li>
 			{% endif %}
