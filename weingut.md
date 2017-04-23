@@ -26,4 +26,4 @@ Heute steht das **Weingut SCHLOSS HALBTURN** im Besitz der Familien **Markus Gra
 
 Bereits mit dem ersten "neuen" Jahrgang (2002) bewies das internationale Team von SCHLOSS HALBTURN seine Qualitäten. Bestätigt wird dieser bedingungslose Qualitätsanspruch durch zahlreiche Auszeichnungen im In- und Ausland (u.a. Falstaff Sortensieger, Gewinner des VINARIA Rotweinfinales, Sieger Pinot Noir Cup in Deutschland, Goldmedaillen in Japan und London).
 
-[Mehr Informationen...](http://weingut-schlosshalbturn.com/){:target="_blank"}
+[Mehr Informationen...](https://www.weingut-schlosshalbturn.com/){:target="_blank"}
