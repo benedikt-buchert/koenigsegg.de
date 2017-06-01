@@ -5761,7 +5761,9 @@ button.close {
   .container .top {
     z-index: 1; }
   .container .logo {
-    padding: 25px; }
+    padding: 25px;
+    margin: 25px;
+    max-height: 138px; }
   .container .dropdown {
     clear: both; }
     @media (min-width: 992px) {
