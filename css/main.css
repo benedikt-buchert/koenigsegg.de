@@ -5761,9 +5761,10 @@ button.close {
   .container .top {
     z-index: 1; }
   .container .logo {
-    padding: 25px;
-    margin: 25px;
-    max-height: 138px; }
+    display: inline;
+    padding-top: 40px; }
+    .container .logo img {
+      max-height: 138px; }
   .container .dropdown {
     clear: both; }
     @media (min-width: 992px) {
@@ -5841,8 +5842,6 @@ button.close {
     background-color: transparent; }
   .container .slider-row {
     position: relative; }
-    .container .slider-row img {
-      width: 100%; }
     .container .slider-row .box {
       position: absolute;
       background-color: #c23d2f; }
