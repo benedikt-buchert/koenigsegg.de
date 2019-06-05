@@ -10,7 +10,7 @@ slides:
   - koenigsegg3.jpg
 ---
 <div class='col-sm-6 content' markdown="1">
-![Burg Königsegg](images/Adel_im_Wandel.jpg)
+![Burg Königsegg](images/Burg_Koenigsegg.jpg)
 <p>Burg Königsegg</p>
 </div>
 <div class='col-sm-6 content' markdown="1">
@@ -18,7 +18,7 @@ Die Ersterwähnung des Geschlechternamens Königsegg am 14. Oktober 1251 weist a
 </div>
 <div class="clearfix"></div>
 <div class='col-sm-6 content' markdown="1">
-![Empfang von Kaiser Franz in Aulendorf](images/Schloss_Aulendorf.jpg)
+![Empfang von Kaiser Franz in Aulendorf](images/Adel_im_Wandel.jpg)
 <p>Empfang von Kaiser Franz in Aulendorf</p>
 </div>
 <div class='col-sm-6 content' markdown="1">
@@ -30,7 +30,7 @@ Die Erhebung in den Freiherrenstand genoß Hans VII. Frhr. von Königsegg 1510.
 <div class="clearfix"></div>
 </div>
 <div class='col-sm-6 content' markdown="1">
-![Schloss Aulendorf heute](images/Burg_Koenigsegg.jpg)
+![Schloss Aulendorf heute](images/Schloss_Aulendorf.jpg)
 <p>Schloss Aulendorf heute</p>
 </div>
 <div class='col-sm-6 content' markdown="1">
